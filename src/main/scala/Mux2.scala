@@ -10,5 +10,5 @@ class Mux2 extends RawModule {
   })
   io.out := (io.sel & io.in1) | (~io.sel & io.in0)
 }
-object Mux2 extends App {Driver.emitVerilog(new Mux2())
-}
+//object Mux2 extends App {Driver.emitVerilog(new Mux2())
+//}
