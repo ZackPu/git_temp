@@ -1,5 +1,6 @@
 import chisel3._
 import chisel3.Driver
+
 class Demo_0 extends Module {
   val io = IO(new Bundle {
     var in_a = Input(UInt(2.W))

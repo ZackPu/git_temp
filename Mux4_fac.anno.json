@@ -1,0 +1,45 @@
+[
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Mux4_fac|Mux4_fac>io_out",
+    "sources":[
+      "~Mux4_fac|Mux4_fac>io_sel",
+      "~Mux4_fac|Mux4_fac>io_in3",
+      "~Mux4_fac|Mux4_fac>io_in2",
+      "~Mux4_fac|Mux4_fac>io_in1",
+      "~Mux4_fac|Mux4_fac>io_in0"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~Mux4_fac|Mux2",
+    "duplicate":"~Mux4_fac|Mux4_fac/Mux2:Mux2",
+    "index":0.0
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~Mux4_fac|Mux2_1",
+    "duplicate":"~Mux4_fac|Mux4_fac/Mux2_1:Mux2",
+    "index":0.3333333333333333
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~Mux4_fac|Mux2_2",
+    "duplicate":"~Mux4_fac|Mux4_fac/Mux2_2:Mux2",
+    "index":0.6666666666666666
+  },
+  {
+    "class":"logger.LogLevelAnnotation",
+    "globalLogLevel":{
+      
+    }
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  }
+]

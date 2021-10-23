@@ -12,3 +12,12 @@ class Mux2 extends RawModule {
 }
 //object Mux2 extends App {Driver.emitVerilog(new Mux2())
 //}
+object Mux2 {
+  def apply(sel: UInt, in0: UInt, in1: UInt) = {
+    val m = Module(new Mux2)
+    m.io.in0 := in0
+    m.io.in1 := in1
+    m.io.sel := sel
+    m.io.out
+  }
+}
